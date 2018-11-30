@@ -1,27 +1,19 @@
 # MovielistApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+This project was create for my college project.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve`in the Coomand Prompt for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `node server.js` in the command prompt to get datas from the server. Please navigate to the BackEnd folder in the command prompt before you run the command. Navigate to [http://localhost:8081/api/posts] to look at your json data.
 
-## Build
+## Guide for this APP
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This movie list app is a very simple MEAN STACK APPLICATION. In this app, you will be able to [ADD]/ [EDIT]/ [DELETE] movies that you just created. There's a componet that allows you to view all the movies you've created as well.
 
-## Running unit tests
+## Developing APP
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This app was very challenging for me because I don't really understand how it works so i have to go through a lot of tutorials to figure it out. I went to [https://www.w3schools.com/] to learn CSS changes and animation for the buttons and textboxes. 
