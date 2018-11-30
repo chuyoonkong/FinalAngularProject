@@ -1,0 +1,48 @@
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="movieTitle"
+        ngModel
+        required
+        #movieTitle="ngModel">
+      <mat-error *ngIf="movieTitle.invalid">Please enter the movie title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieGenre"
+        ngModel
+        required
+        #movieGenre="ngModel"></textarea>
+      <mat-error *ngIf="movieGenre.invalid">Please enter the movie genre.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieDirector"
+        ngModel
+        required
+        #movieDirector="ngModel"></textarea>
+      <mat-error *ngIf="movieDirector.invalid">Please enter movie director name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieProducer"
+        ngModel
+        required
+        #movieProducer="ngModel"></textarea>
+      <mat-error *ngIf="movieProducer.invalid">Please enter movie producer name.</mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Save Post</button>
+  </form>
+</mat-card>
