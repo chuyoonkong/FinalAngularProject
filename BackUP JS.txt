@@ -1,0 +1,77 @@
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="movieTitle"
+        ngModel
+        required
+        #movieTitle="ngModel">
+      <mat-error *ngIf="movieTitle.invalid">Please enter the movie title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieGenre"
+        ngModel
+        required
+        #movieGenre="ngModel"></textarea>
+      <mat-error *ngIf="movieGenre.invalid">Please enter the movie genre.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieDirector"
+        ngModel
+        required
+        #movieDirector="ngModel"></textarea>
+      <mat-error *ngIf="movieDirector.invalid">Please enter movie director name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="movieProducer"
+        ngModel
+        required
+        #movieProducer="ngModel"></textarea>
+      <mat-error *ngIf="movieProducer.invalid">Please enter movie producer name.</mat-error>
+    </mat-form-field>
+  <br/><br/><br/><br/>
+    <button class="button" type="submit">Save Post</button>
+  </form>
+</mat-card>
+>.............................................................<
+<!-- <mat-toolbar color='primary'>Posts</mat-toolbar> -->
+<!-- <app-post-create></app-post-create>
+<app-post-details></app-post-details> -->
+<!-- <div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/']"><mat-icon>add</mat-icon></a>
+</div> -->
+<mat-toolbar color="primary"> 
+  <mat-toolbar-row>
+          <span class="title-center">
+     My Online Movie Library
+  </span>
+    </mat-toolbar-row>
+  
+    <mat-toolbar-row>
+
+<button mat-button [routerLink]="['/create']" color="Warn">Create</button>
+<button mat-button [routerLink]="['/list']">List</button>
+</mat-toolbar-row>
+</mat-toolbar>
+
+
+<!--<button mat-button color="primary" [matMenuTriggerFor]="menu">Posts Menu</button>
+<mat-menu color="primary" #menu="matMenu">
+<button color="primary" mat-menu-item [routerLink]="['/create']">Create</button>
+<button color="primary"mat-menu-item [routerLink]="['/']">List</button>
+</mat-menu> -->
+
+
+
+<router-outlet></router-outlet>
